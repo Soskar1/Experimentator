@@ -6,6 +6,6 @@
 #include <functional>
 #include <chrono>
 
-double GetAverageExecutionTime(const std::function<void()>& function);
+double GetAverageExecutionTime(const std::function<void()>& function, const std::function<void()>& inputFunction = []() {});
 
 #endif
